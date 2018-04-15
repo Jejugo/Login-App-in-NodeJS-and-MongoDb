@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- BOOTSTRAP CSS FILES -->
+		<link rel="stylesheet" href="/assets/bootstrap-3.3-1.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/assets/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>Login Page</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="col-lg-6">
+				<h2> Log In </h2>
+				<form id="login" method="POST" action="/login">
+					<input id="nome" type="text" placeholder="Digite seu usuario" name="nome">
+					<input  id="pass" type="text" placeholder="Digite sua senha" name="pass">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+			</div>
+			<div class="col-lg-6">
+				<h2> Sign Up! </h2>
+				<form id="signup" method="POST" action="/signup">
+					<input id="signNome" type="text" placeholder="Digite seu usuario" name="nome">
+					<input  id="signPass" type="text" placeholder="Digite sua senha" name="pass">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+					<% for(var i=0; i<error.length; i++){ %>
+						<% if (error[i]["msg"] !== '') { %>
+							<div class="alert alert-danger"><%= error[i]["msg"] %></div>
+						<% } %>
+					<% } %>
+					<% if (success["msg"] !== ''){ %>
+					<div class="alert alert-success"><%= success["msg"] %></div>
+					<% } %>
+				</form>
+			</div>
+		</div>
+
+	</body>
+
+	<script>
+		$(document).ready(function(){
+		
+		});
+	</script>
+</html>

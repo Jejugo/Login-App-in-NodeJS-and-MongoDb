@@ -1,0 +1,21 @@
+{
+  "name": "loginapp",
+  "version": "1.0.0",
+  "description": "app to simulate a website with a login using NOSQl database",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Goes",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.15.5",
+    "express-validator": "^4.2.1",
+    "mongoose": "^4.11.13",
+    "nodemon": "^1.12.1"
+  }
+}
